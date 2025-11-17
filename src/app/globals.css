@@ -1,0 +1,341 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Black & White Minimalist Theme - Notion Style */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 20%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 0 0% 0%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    /* Dark Mode - Black & White */
+    --background: 0 0% 5%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 80%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 85%;
+    --accent-foreground: 0 0% 5%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-feature-settings: 'cv11', 'ss01';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* Custom scrollbar - Notion style */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted/50 rounded-full;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-muted-foreground/50;
+  }
+  
+  /* Typography System - Minimal & Clean */
+  h1 {
+    @apply text-5xl font-bold tracking-tight;
+    line-height: 1.1;
+  }
+  
+  h2 {
+    @apply text-3xl font-bold tracking-tight;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    @apply text-2xl font-semibold tracking-tight;
+    line-height: 1.3;
+  }
+  
+  h4 {
+    @apply text-xl font-semibold;
+    line-height: 1.4;
+  }
+  
+  h5 {
+    @apply text-lg font-medium;
+  }
+  
+  p {
+    @apply text-base text-muted-foreground;
+    line-height: 1.6;
+  }
+  
+  /* Notion-style Divider */
+  .divider {
+    @apply border-t border-border my-8;
+  }
+  
+  /* Notion-style Button */
+  .btn-notion {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium;
+    @apply bg-foreground text-background rounded-lg;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:bg-foreground/90 hover:shadow-lg hover:shadow-black/10;
+    @apply active:scale-[0.98];
+  }
+  
+  .btn-notion-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium;
+    @apply bg-transparent text-foreground border-2 border-border rounded-lg;
+    @apply transition-all duration-200 ease-out;
+    @apply hover:border-foreground hover:shadow-md;
+    @apply active:scale-[0.98];
+  }
+  
+  /* Notion-style Card */
+  .card-notion {
+    @apply bg-card border border-border rounded-lg p-6;
+    @apply transition-all duration-300 ease-out;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  }
+  
+  .card-notion-hover {
+    @apply bg-card border border-border rounded-lg p-6;
+    @apply transition-all duration-300 ease-out;
+    @apply hover:border-foreground/20 hover:shadow-xl hover:shadow-black/5;
+    @apply hover:-translate-y-1 cursor-pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+  }
+  
+  /* Container Variants */
+  .container-elevated {
+    @apply bg-card border border-border rounded-xl p-8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
+  }
+  
+  .container-inset {
+    @apply bg-secondary/30 border border-border rounded-lg p-6;
+  }
+  
+  .container-ghost {
+    @apply border-2 border-dashed border-border rounded-lg p-6;
+    @apply hover:border-foreground/40 transition-all duration-200;
+  }
+  
+  /* Floating Shadow (for sticky nav) */
+  .floating-shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Badge - Black & White */
+  .badge-minimal {
+    @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-medium;
+    @apply bg-secondary text-secondary-foreground border border-border;
+  }
+  
+  /* Profile Photo Glow */
+  .profile-glow {
+    @apply relative;
+  }
+  
+  .profile-glow::before {
+    content: '';
+    @apply absolute -inset-2 bg-gradient-to-br from-foreground/10 to-foreground/5;
+    @apply rounded-full blur-xl opacity-0 transition-opacity duration-500;
+  }
+  
+  .profile-glow:hover::before {
+    @apply opacity-100;
+  }
+  
+  /* Timeline Design */
+  .timeline-item {
+    @apply relative pl-8 border-l-2 border-border pb-8 last:pb-0;
+  }
+  
+  .timeline-item::before {
+    content: '';
+    @apply absolute -left-[5px] top-1.5 w-2 h-2 rounded-full bg-foreground;
+  }
+  
+  .timeline-item.active::before {
+    @apply bg-foreground;
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+  
+  @keyframes pulse-dot {
+    0%, 100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.6;
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Vertical Nav - Notion Style with Enhanced Immersive Effects */
+  .nav-vertical {
+    @apply flex flex-col gap-1 p-3 bg-card border border-border rounded-xl;
+    @apply sticky top-8;
+    backdrop-filter: blur(20px) saturate(180%);
+    background: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform-origin: right center;
+    will-change: transform;
+    perspective: 1000px;
+  }
+  
+  .dark .nav-vertical {
+    background: rgba(13, 13, 13, 0.75);
+    box-shadow: 0 8px 32px rgba(255, 255, 255, 0.04), 0 2px 8px rgba(255, 255, 255, 0.02);
+  }
+  
+  .nav-vertical button {
+    @apply flex items-center gap-3 px-3 py-2.5 text-xs font-medium text-muted-foreground;
+    @apply rounded-lg;
+    position: relative;
+    overflow: hidden;
+    transform-origin: right center;
+    transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform, background-color, color;
+  }
+  
+  .nav-vertical button::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: currentColor;
+    transform: scaleY(0);
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  
+  .nav-vertical button.active {
+    @apply bg-foreground text-background;
+    @apply shadow-md;
+  }
+  
+  .nav-vertical button.active::before {
+    transform: scaleY(1);
+  }
+  
+  .nav-vertical button:hover {
+    @apply bg-secondary text-foreground;
+  }
+  
+  /* Parallax Effect Ready */
+  .parallax-container {
+    @apply transform-gpu will-change-transform;
+  }
+  
+  /* Fade Animations (GSAP Ready) */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
+  /* Stagger Animation Ready */
+  .stagger-item {
+    opacity: 1;
+  }
+  
+  /* Scroll Progress Bar */
+  .progress-bar {
+    transform-origin: left center;
+    transition: transform 0.1s linear;
+  }
+  
+  /* Text Reveal Animation */
+  @keyframes textReveal {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .text-reveal {
+    animation: textReveal 0.6s ease-out forwards;
+  }
+  
+  /* Card Scale Effect */
+  .card-scale {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  
+  .card-scale:hover {
+    transform: scale(1.03) translateY(-2px);
+  }
+}
+
+/* Print styles for resume */
+@media print {
+  @page {
+    size: A4;
+    margin: 0.5in;
+  }
+  
+  body {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  
+  .print\:hidden {
+    display: none !important;
+  }
+  
+  .print\:shadow-none {
+    box-shadow: none !important;
+  }
+}

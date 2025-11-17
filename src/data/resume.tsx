@@ -1,0 +1,470 @@
+import { Icons } from "@/components/icons";
+import { HomeIcon, NotebookIcon } from "lucide-react";
+
+export const DATA = {
+  name: "Malcolm Joaquin L. Cuady",
+  initials: "MC",
+  url: "https://malcolmcuady.dev",
+  location: "Manila, PH",
+  locationLink: "https://www.google.com/maps/place/manila",
+  description:
+    "Full-Stack Developer & Automation Engineer specializing in building scalable web systems and workflow automation. Founder of Optrizo.",
+  summary:
+    "I'm a 4th-year BS Information Technology student at De La Salle University, graduating December 2025. As the founder of Optrizo, I build automation-first solutions for SMEs, including CRMs, queueing systems, and dashboards. I specialize in full-stack development, API integrations, and workflow optimization using modern web technologies. I've reduced manual work by 80% and improved operational efficiency for multiple businesses through smart automation and system design.",
+  avatarUrl: "/avatar/me-light.png",
+  coreSkills: [
+    "Leadership",
+    "Analytical Thinking",
+    "Problem-Solving",
+    "Communication",
+    "Collaboration",
+    "Design Thinking",
+    "Adaptability",
+    "Innovation",
+    "Versatility",
+    "Critical Thinking",
+    "Time Management",
+    "Attention to Detail",
+    "Continuous Learning",
+    "Team Building",
+  ],
+  skills: [
+    {
+      category: "Languages & Frameworks",
+      logoUrl: "/skills/frontend.png",
+      skills: [
+        "JavaScript",
+        "TypeScript",
+        "Python",
+        "PHP",
+        "C#",
+        "Java",
+        "Dart",
+      ],
+    },
+    {
+      category: "Frontend Development",
+      logoUrl: "/skills/frameworks-libraries.png",
+      skills: [
+        "React.js",
+        "Next.js",
+        "Vue.js",
+        "Tailwind CSS",
+        "Bootstrap",
+        "FlutterFlow",
+      ],
+    },
+    {
+      category: "Backend Development",
+      logoUrl: "/skills/backend.png",
+      skills: [
+        "Node.js",
+        "Express.js",
+        "ASP.NET Core",
+        "Spring Boot",
+        "REST APIs",
+        "GraphQL",
+      ],
+    },
+    {
+      category: "Databases & Cloud",
+      logoUrl: "/skills/cloud-deployment.png",
+      skills: [
+        "Supabase",
+        "Firebase",
+        "SQL/NoSQL",
+        "AWS",
+        "Vercel",
+        "Netlify",
+      ],
+    },
+    {
+      category: "Automation & Integrations",
+      logoUrl: "/skills/ai-tools.png",
+      skills: [
+        "Airtable",
+        "Make.com",
+        "Zapier",
+        "Klaviyo",
+        "Twilio",
+        "PayMongo",
+        "Stripe",
+      ],
+    },
+    {
+      category: "AI/ML & Data",
+      logoUrl: "/skills/development-tools.png",
+      skills: [
+        "TensorFlow",
+        "Tesseract OCR",
+        "NLP",
+        "Power BI",
+        "Statistical Analysis",
+      ],
+    },
+    {
+      category: "DevOps & Tools",
+      logoUrl: "/skills/design-cms.png",
+      skills: [
+        "Git/GitHub",
+        "Docker",
+        "Kubernetes",
+        "GitHub Actions",
+        "WordPress/Elementor",
+      ],
+    },
+  ],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+  ],
+  contact: {
+    email: "malcolm.cuady@dlsu.edu.ph",
+    tel: "+639123456789",
+    social: {
+      GitHub: {
+        name: "GitHub",
+        url: "https://github.com/jcuady",
+        icon: Icons.github,
+
+        navbar: true,
+      },
+      LinkedIn: {
+        name: "LinkedIn",
+        url: "https://www.linkedin.com/in/malcolm-joaquin-cuady-7566bb262/",
+        icon: Icons.linkedin,
+
+        navbar: true,
+      },
+      Facebook: {
+        name: "Facebook",
+        url: "https://www.facebook.com/optrizo",
+        icon: Icons.facebook,
+
+        navbar: true,
+      },
+      Instagram: {
+        name: "Instagram",
+        url: "https://www.instagram.com/malcolmcuady",
+        icon: Icons.instagram,
+        navbar: false,
+      },
+      email: {
+        name: "Send Email",
+        url: "#",
+        icon: Icons.email,
+
+        navbar: false,
+      },
+    },
+  },
+
+  work: [
+    {
+      company: "Optrizo",
+      href: "https://optrizo.com",
+      badges: ["Founder"],
+      location: "Remote",
+      title: "Founder & Lead Developer",
+      logoUrl: "/work-experience/optrizo.png",
+      start: "2023",
+      end: "Present",
+      description:
+        "Founded student-led startup delivering automation-first solutions for SMEs. Built CRMs, queueing systems, dashboards, and billing workflows using React, Supabase, Twilio, Airtable, Make.com, and FlutterFlow. Partner developer of Pancake PH. Successfully reduced manual work by 80% and improved operational efficiency across multiple client businesses.",
+    },
+    {
+      company: "Hakum Auto Care",
+      badges: [],
+      href: "https://hakumautocare.com",
+      location: "On-site",
+      title: "Full Stack Developer",
+      logoUrl: "/work-experience/hakum.png",
+      start: "2024",
+      end: "Present",
+      description:
+        "Built real-time queueing system with SMS notification capabilities using React, TypeScript, Supabase, and Twilio. Developed Rent then Drive (RTD) car rental app for vehicle booking and management. Improved customer flow management and operational visibility, resulting in reduced wait times and enhanced customer satisfaction.",
+    },
+    {
+      company: "Rent then Drive",
+      badges: [],
+      href: "https://rentthendrivecar.com",
+      location: "Remote",
+      title: "Full Stack Flutter Developer",
+      logoUrl: "/work-experience/rtd.png",
+      start: "2024",
+      end: "Present",
+      description:
+        "Developed full-stack car rental application using Flutter and Firebase. Built features for vehicle browsing, booking management, payment processing, and real-time availability tracking. Implemented user authentication, admin dashboard, and automated notifications to streamline the rental process.",
+    },
+    {
+      company: "Sole Surgeon",
+      href: "https://solesurgeon.com",
+      badges: [],
+      location: "Remote",
+      title: "Automation & CRM Developer",
+      logoUrl: "/work-experience/solesurgeon.png",
+      start: "2024",
+      end: "2024",
+      description:
+        "Created comprehensive Airtable + Pancake CRM system with automated tagging, SMS flows, and customer tracking. Reduced manual work by 80% and improved response time by 40% through intelligent workflow automation and data management.",
+    },
+    {
+      company: "Startek",
+      badges: ["Internship"],
+      href: "https://startek.com",
+      location: "Hybrid",
+      title: "Data Analyst Intern",
+      logoUrl: "/work-experience/startek.png",
+      start: "June 2024",
+      end: "August 2024",
+      description:
+        "Built Power BI dashboards and SQL reports for business intelligence. Performed sentiment analysis on Xiaomi customer data using NLP techniques. Assisted with data cleaning, analytics, and performance reporting to support data-driven decision making.",
+    },
+    {
+      company: "Converge ICT",
+      href: "https://convergeict.com",
+      badges: ["Internship"],
+      location: "On-site",
+      title: "IT Intern",
+      logoUrl: "/work-experience/converge.png",
+      start: "March 2024",
+      end: "May 2024",
+      description:
+        "Performed L1 & L2 network troubleshooting and operations support. Used Salesforce Service Cloud for case management and customer support. Learned internal tooling and workflow optimization processes for enterprise network infrastructure.",
+    },
+  ],
+  education: [
+    {
+      school: "De La Salle University",
+      href: "https://www.dlsu.edu.ph",
+      degree: "Bachelor of Science in Information Technology",
+      logoUrl: "/education/DLSU-LOGO.png",
+      start: "2021",
+      end: "2025",
+      achievements: [
+        "1st Honors Dean's List (2024–2025)",
+        "2nd Honors Dean's List (2023–2024)",
+        "Co-Founder – Data Science Society",
+      ],
+      relevantElectives: [
+        "Advanced Web Development",
+        "Systems Integration",
+        "Mobile App Development",
+        "Data Mining & AI Principles",
+        "Applied Data Analytics",
+        "Secure SDLC",
+        "Design Thinking",
+        "Systems Planning",
+        "System Continuity & Disaster Recovery",
+      ],
+    },
+  ],
+  certifications: [
+    {
+      title: "Airtable Admin Certification",
+      href: "https://www.airtable.com",
+      dates: "2024",
+      description: "Issued by Airtable",
+      image: "/certifications/airtable.png",
+    },
+    {
+      title: "AWS Academy Cloud Foundations",
+      href: "https://aws.amazon.com/training/awsacademy/",
+      dates: "2024",
+      description: "Issued by AWS Academy",
+      image: "/certifications/aws.png",
+    },
+    {
+      title: "Klaviyo Developer Certificate",
+      href: "https://www.klaviyo.com",
+      dates: "2024",
+      description: "Issued by Klaviyo",
+      image: "/certifications/klaviyo.png",
+    },
+    {
+      title: "HubSpot SEO & Marketing Hub",
+      href: "https://www.hubspot.com",
+      dates: "2024",
+      description: "Issued by HubSpot Academy",
+      image: "/certifications/hubspot.png",
+    },
+    {
+      title: "Lean Six Sigma White Belt",
+      href: "https://www.sixsigma.com",
+      dates: "2024",
+      description: "Issued by Six Sigma",
+      image: "/certifications/sixsigma.png",
+    },
+    {
+      title: "Databricks Generative AI Essentials",
+      href: "https://www.databricks.com",
+      dates: "2024",
+      description: "Issued by Databricks",
+      image: "/certifications/databricks.png",
+    },
+    {
+      title: "Asana Workflow Specialist",
+      href: "https://www.asana.com",
+      dates: "2024",
+      description: "Issued by Asana",
+      image: "/certifications/asana.png",
+    },
+    {
+      title: "CCNA Enterprise Networking",
+      href: "https://www.cisco.com",
+      dates: "2024",
+      description: "Issued by Cisco",
+      image: "/certifications/cisco.png",
+    },
+  ],
+  projects: [
+    {
+      title: "Hakum Auto Care - Queueing System",
+      href: "https://hakumautocare.com",
+      dates: "2024",
+      active: true,
+      description:
+        "Real-time queueing management system with SMS notifications for auto care services. Built with React, TypeScript, Supabase, and Twilio to streamline customer flow and improve operational efficiency.",
+      technologies: ["React", "TypeScript", "Supabase", "Twilio"],
+      links: [
+        {
+          type: "Website",
+          href: "https://hakumautocare.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/hakum.png",
+      video: "",
+    },
+    {
+      title: "Meridian Capital - Investment Platform",
+      href: "https://meridian-capital-zeta.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "Modern investment platform showcasing financial services and investment opportunities. Built with Next.js and deployed on Vercel for optimal performance.",
+      technologies: ["Next.js", "React", "Tailwind CSS", "Vercel"],
+      links: [
+        {
+          type: "Website",
+          href: "https://meridian-capital-zeta.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/meridian.png",
+      video: "",
+    },
+    {
+      title: "InvestPH - Investment Dashboard",
+      href: "https://invest-ph-1.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "Investment tracking and portfolio management dashboard for Philippine market. Features real-time data visualization and investment analytics.",
+      technologies: ["Next.js", "React", "TypeScript", "Vercel"],
+      links: [
+        {
+          type: "Website",
+          href: "https://invest-ph-1.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/investph.png",
+      video: "",
+    },
+    {
+      title: "RTD 2025 - FlutterFlow App",
+      href: "https://r-t-d-2025-new-rlyzjy.flutterflow.app/",
+      dates: "2025",
+      active: true,
+      description:
+        "Mobile-first application built with FlutterFlow for rapid deployment and cross-platform compatibility. Features modern UI/UX and responsive design.",
+      technologies: ["FlutterFlow", "Dart", "Firebase"],
+      links: [
+        {
+          type: "Website",
+          href: "https://r-t-d-2025-new-rlyzjy.flutterflow.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/rtd.png",
+      video: "",
+    },
+    {
+      title: "Sole Surgeon - CRM & Automation",
+      href: "https://solesurgeon.com",
+      dates: "2024",
+      active: true,
+      description:
+        "Comprehensive Airtable + Pancake CRM system with automated tagging, SMS flows, and customer tracking. Reduced manual work by 80% and improved response time by 40%.",
+      technologies: ["Airtable", "Make.com", "Twilio", "Pancake"],
+      links: [
+        {
+          type: "Website",
+          href: "https://solesurgeon.com",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/projects/solesurgeon.png",
+      video: "",
+    },
+  ],
+  optrizoProjects: [
+    {
+      title: "Hakum Auto Care - Queueing System",
+      tags: ["Automation", "CRM", "Real-time", "SMS Integration"],
+      description:
+        "Real-time queueing management system with SMS notifications. Built with React, TypeScript, Supabase, and Twilio for streamlined customer flow.",
+      technologies: ["React", "TypeScript", "Supabase", "Twilio"],
+      dates: "2024",
+      image: "/projects/hakum.png",
+    },
+    {
+      title: "Sole Surgeon - CRM & Automation",
+      tags: ["CRM", "Automation", "API Integration", "Airtable"],
+      description:
+        "Comprehensive Airtable + Pancake CRM system with automated tagging, SMS flows, and customer tracking. Reduced manual work by 80%.",
+      technologies: ["Airtable", "Make.com", "Twilio", "Pancake"],
+      dates: "2024",
+      image: "/projects/solesurgeon.png",
+    },
+    {
+      title: "Airtable Automation Workflows",
+      tags: ["Automation", "API Integration", "Supabase", "Make.com"],
+      description:
+        "Custom automation workflows connecting Airtable with multiple services. Includes billing automation, inventory management, and customer sync systems.",
+      technologies: ["Airtable", "Make.com", "Supabase", "REST APIs"],
+      dates: "2023-2024",
+      image: "/projects/airtable-automation.png",
+    },
+    {
+      title: "Pancake PH Partner Integrations",
+      tags: ["API Integration", "CRM", "Automation", "React"],
+      description:
+        "Built custom integrations for Pancake CRM platform. Developed automated workflows for client onboarding, tagging systems, and customer communication.",
+      technologies: ["React", "Pancake API", "Make.com", "Supabase"],
+      dates: "2024",
+      image: "/projects/pancake-integration.png",
+    },
+    {
+      title: "Billing Automation Workflows",
+      tags: ["Automation", "API Integration", "Stripe", "PayMongo"],
+      description:
+        "Automated billing systems for multiple clients. Integrated payment gateways, invoice generation, and subscription management using modern APIs.",
+      technologies: ["Stripe", "PayMongo", "Make.com", "Airtable"],
+      dates: "2023-2024",
+      image: "/projects/billing-automation.png",
+    },
+  ],
+  hackathons: [
+    {
+      title: "DLSU Hackathon 2024",
+      dates: "October 2024",
+      location: "Manila, PH",
+      description:
+        "Developed an innovative automation solution for business process optimization during the DLSU IT department hackathon. Focused on creating efficient workflows using modern web technologies.",
+      image: "/hackathons/dlsu.png",
+      mlh: "",
+      links: [],
+    },
+  ],
+} as const;
