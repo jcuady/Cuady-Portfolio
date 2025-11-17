@@ -142,7 +142,7 @@ export default function Page() {
           <div ref={heroRef} className="space-y-8">
             <div className="space-y-4">
               <h1 className="text-6xl lg:text-7xl font-bold tracking-tight">
-                Hi, I'm Malcolm
+                Hi, I&apos;m Malcolm
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
                 Full-Stack Developer & Automation Engineer specializing in scalable systems & workflow automation.
@@ -433,7 +433,7 @@ export default function Page() {
           <div className="card-notion max-w-2xl">
             <div className="space-y-6">
               <p className="text-lg text-muted-foreground">
-                I'm always open to discussing new projects, opportunities, or partnerships. Feel free to reach out!
+                I&apos;m always open to discussing new projects, opportunities, or partnerships. Feel free to reach out!
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
