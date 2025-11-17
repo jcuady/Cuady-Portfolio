@@ -11,6 +11,26 @@ export default function CertificationsPage() {
     return getYear(b.dates) - getYear(a.dates);
   });
 
+  if (sortedCertifications.length === 0) {
+    return (
+      <main className="flex flex-col min-h-[100dvh] space-y-10">
+        <div className="space-y-8">
+          <Link
+            href="/"
+            className="group inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+          >
+            <ChevronLeftIcon className="size-4 translate-x-0 transform transition-all duration-300 ease-out group-hover:-translate-x-1" />
+            Back
+          </Link>
+          <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            All Certifications
+          </h1>
+          <p className="text-muted-foreground">No certifications found.</p>
+        </div>
+      </main>
+    );
+  }
+
   return (
     <main className="flex flex-col min-h-[100dvh] space-y-10">
       <div className="space-y-8">
