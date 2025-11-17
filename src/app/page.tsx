@@ -14,6 +14,7 @@ import { FloatingNav } from "@/components/floating-nav";
 import { DATA } from "@/data/resume";
 import { Download, Mail, MapPin, Home, Briefcase, FolderGit2, Zap } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 // Register GSAP plugins
 if (typeof window !== "undefined") {
@@ -304,7 +305,11 @@ export default function Page() {
                 ref={profileRef}
                 className="profile-glow parallax-container relative z-0"
               >
-                <ThemeAvatar className="w-48 h-48 lg:w-64 lg:h-64" />
+                <ThemeAvatar 
+                  name={DATA.name}
+                  initials={DATA.initials}
+                  className="w-48 h-48 lg:w-64 lg:h-64" 
+                />
               </div>
             </div>
 
@@ -501,9 +506,11 @@ export default function Page() {
                     <div key={index} className="space-y-4">
                       <div className="flex items-start gap-4">
                         {edu.logoUrl && (
-                          <img 
+                          <Image 
                             src={edu.logoUrl} 
                             alt={`${edu.school} logo`}
+                            width={48}
+                            height={48}
                             className="w-12 h-12 object-contain"
                           />
                         )}

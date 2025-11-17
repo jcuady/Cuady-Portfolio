@@ -2,8 +2,16 @@ import { DATA } from "@/data/resume";
 import { ChevronLeftIcon } from "lucide-react";
 import Link from "next/link";
 
+type Certification = {
+  title: string;
+  href?: string;
+  dates: string;
+  description: string;
+  image?: string;
+};
+
 export default function CertificationsPage() {
-  const sortedCertifications = [...DATA.certifications].sort((a, b) => {
+  const sortedCertifications: Certification[] = [...DATA.certifications].sort((a, b) => {
     const getYear = (dateStr: string) => {
       const match = dateStr.match(/\d{4}/);
       return match ? parseInt(match[0]) : 0;
