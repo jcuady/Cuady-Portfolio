@@ -289,16 +289,16 @@ export default function Page() {
       </motion.div>
 
       {/* Main Content - Asymmetric Grid Layout */}
-      <main className="max-w-[1400px] mx-auto px-6 lg:px-12 py-16">
+      <main className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12 py-8 sm:py-16">
         {/* Hero Section - Full Width Centered */}
         <motion.section 
           id="hero" 
-          className="min-h-[90vh] flex flex-col items-center justify-center text-center mb-32 relative"
+          className="min-h-[70vh] sm:min-h-[80vh] lg:min-h-[90vh] flex flex-col items-center justify-center text-center mb-16 sm:mb-24 lg:mb-32 relative"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
         >
-          <div ref={heroRef} className="max-w-4xl space-y-12 relative z-10">
+          <div ref={heroRef} className="max-w-4xl space-y-6 sm:space-y-8 lg:space-y-12 relative z-10">
             {/* Profile Photo - Top Center */}
             <div className="flex justify-center">
               <div
@@ -308,31 +308,31 @@ export default function Page() {
                 <ThemeAvatar 
                   name={DATA.name}
                   initials={DATA.initials}
-                  className="w-48 h-48 lg:w-64 lg:h-64" 
+                  className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-64 lg:h-64" 
                 />
               </div>
             </div>
 
-            <div className="space-y-6 relative z-20">
-              <h1 className="text-6xl lg:text-8xl font-bold tracking-tight">
+            <div className="space-y-3 sm:space-y-4 lg:space-y-6 relative z-20">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-8xl font-bold tracking-tight">
                 Malcolm Joaquin L. Cuady
               </h1>
-              <p className="text-2xl lg:text-3xl text-muted-foreground leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-muted-foreground leading-relaxed">
                 Full-Stack Developer & Automation Engineer
               </p>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+              <p className="text-sm sm:text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
                 Delivering scalable software through agile, iterative development
               </p>
             </div>
 
             {/* Location */}
-            <div className="flex items-center justify-center gap-2 text-base text-muted-foreground">
-              <MapPin className="w-5 h-5" />
+            <div className="flex items-center justify-center gap-2 text-sm sm:text-base text-muted-foreground">
+              <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
               <span>Based in Manila, PH</span>
             </div>
 
             {/* Social Links */}
-            <div className="flex items-center justify-center gap-6">
+            <div className="flex items-center justify-center gap-4 sm:gap-6">
               {Object.entries(DATA.contact.social)
                 .filter(([, social]) => social.navbar)
                 .map(([name, social]) => (
@@ -341,9 +341,9 @@ export default function Page() {
                     href={social.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-4 border-2 border-border rounded-lg hover:border-foreground transition-all duration-200 hover:shadow-lg"
+                    className="p-3 sm:p-4 border-2 border-border rounded-lg hover:border-foreground transition-all duration-200 hover:shadow-lg"
                   >
-                    <social.icon className="w-6 h-6" />
+                    <social.icon className="w-5 h-5 sm:w-6 sm:h-6" />
                   </Link>
                 ))}
             </div>
@@ -351,35 +351,35 @@ export default function Page() {
         </motion.section>
 
         {/* Split Layout Container */}
-        <div className="grid lg:grid-cols-[2fr_1fr] gap-16 lg:gap-24">
+        <div className="grid lg:grid-cols-[2fr_1fr] gap-8 sm:gap-12 lg:gap-16 xl:gap-24">
           {/* Left Column - Main Content */}
-          <div className="space-y-32">
+          <div className="space-y-16 sm:space-y-20 lg:space-y-32">
             {/* Work Experience Section - Left */}
             <section id="work" className="fade-up">
-              <div className="mb-12">
+              <div className="mb-6 sm:mb-8 lg:mb-12">
                 <span className="badge-minimal">Experience</span>
                 <h2 className="mt-4">Work Experience</h2>
               </div>
-              <div className="space-y-8 stagger-container">
+              <div className="space-y-6 sm:space-y-8 stagger-container">
                 {DATA.work.map((job, index) => (
                   <div
                     key={index}
                     className="card-notion-hover stagger-item"
                   >
-                    <div className="space-y-4">
-                      <div className="flex items-start justify-between gap-4 flex-wrap">
-                        <div className="flex-1">
-                          <h3 className="text-xl font-semibold mb-1">{job.title}</h3>
+                    <div className="space-y-3 sm:space-y-4">
+                      <div className="flex items-start justify-between gap-3 sm:gap-4 flex-wrap">
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-lg sm:text-xl font-semibold mb-1">{job.title}</h3>
                           <Link
                             href={job.href}
                             target="_blank"
-                            className="text-base text-muted-foreground hover:text-foreground transition-colors"
+                            className="text-sm sm:text-base text-muted-foreground hover:text-foreground transition-colors"
                           >
                             {job.company}
                           </Link>
                         </div>
-                        <div className="text-right">
-                          <p className="text-sm font-medium whitespace-nowrap">
+                        <div className="text-right shrink-0">
+                          <p className="text-xs sm:text-sm font-medium whitespace-nowrap">
                             {job.start} - {job.end}
                           </p>
                           <p className="text-xs text-muted-foreground mt-1">{job.location}</p>

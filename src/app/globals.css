@@ -54,12 +54,20 @@
   * {
     @apply border-border;
   }
+  
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-feature-settings: 'cv11', 'ss01';
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
   
   /* Custom scrollbar - Notion style */
@@ -80,33 +88,33 @@
     @apply bg-muted-foreground/50;
   }
   
-  /* Typography System - Minimal & Clean */
+  /* Typography System - Minimal & Clean with Mobile Optimization */
   h1 {
-    @apply text-5xl font-bold tracking-tight;
+    @apply text-4xl sm:text-5xl font-bold tracking-tight;
     line-height: 1.1;
   }
   
   h2 {
-    @apply text-3xl font-bold tracking-tight;
+    @apply text-2xl sm:text-3xl font-bold tracking-tight;
     line-height: 1.2;
   }
   
   h3 {
-    @apply text-2xl font-semibold tracking-tight;
+    @apply text-xl sm:text-2xl font-semibold tracking-tight;
     line-height: 1.3;
   }
   
   h4 {
-    @apply text-xl font-semibold;
+    @apply text-lg sm:text-xl font-semibold;
     line-height: 1.4;
   }
   
   h5 {
-    @apply text-lg font-medium;
+    @apply text-base sm:text-lg font-medium;
   }
   
   p {
-    @apply text-base text-muted-foreground;
+    @apply text-sm sm:text-base text-muted-foreground;
     line-height: 1.6;
   }
   
@@ -115,13 +123,15 @@
     @apply border-t border-border my-8;
   }
   
-  /* Notion-style Button */
+  /* Notion-style Button - Mobile Optimized (44px min touch target) */
   .btn-notion {
     @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-sm font-medium;
     @apply bg-foreground text-background rounded-lg;
     @apply transition-all duration-200 ease-out;
     @apply hover:bg-foreground/90 hover:shadow-lg hover:shadow-black/10;
     @apply active:scale-[0.98];
+    min-height: 44px;
+    touch-action: manipulation;
   }
   
   .btn-notion-outline {
@@ -130,35 +140,39 @@
     @apply transition-all duration-200 ease-out;
     @apply hover:border-foreground hover:shadow-md;
     @apply active:scale-[0.98];
+    min-height: 44px;
+    touch-action: manipulation;
   }
   
-  /* Notion-style Card */
+  /* Notion-style Card - Mobile Optimized */
   .card-notion {
-    @apply bg-card border border-border rounded-lg p-6;
+    @apply bg-card border border-border rounded-lg p-4 sm:p-6;
     @apply transition-all duration-300 ease-out;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
   }
   
   .card-notion-hover {
-    @apply bg-card border border-border rounded-lg p-6;
+    @apply bg-card border border-border rounded-lg p-4 sm:p-6;
     @apply transition-all duration-300 ease-out;
     @apply hover:border-foreground/20 hover:shadow-xl hover:shadow-black/5;
     @apply hover:-translate-y-1 cursor-pointer;
+    @apply active:scale-[0.98];
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+    touch-action: manipulation;
   }
   
-  /* Container Variants */
+  /* Container Variants - Mobile Optimized */
   .container-elevated {
-    @apply bg-card border border-border rounded-xl p-8;
+    @apply bg-card border border-border rounded-xl p-4 sm:p-6 md:p-8;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.02);
   }
   
   .container-inset {
-    @apply bg-secondary/30 border border-border rounded-lg p-6;
+    @apply bg-secondary/30 border border-border rounded-lg p-4 sm:p-6;
   }
   
   .container-ghost {
-    @apply border-2 border-dashed border-border rounded-lg p-6;
+    @apply border-2 border-dashed border-border rounded-lg p-4 sm:p-6;
     @apply hover:border-foreground/40 transition-all duration-200;
   }
   
@@ -316,6 +330,35 @@
   
   .card-scale:hover {
     transform: scale(1.03) translateY(-2px);
+  }
+}
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+  /* Reduce animations on mobile for better performance */
+  .parallax-container {
+    transform: none !important;
+  }
+  
+  /* Optimize shadows on mobile */
+  .floating-shadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  }
+  
+  /* Better spacing for mobile */
+  .divider {
+    @apply my-6;
+  }
+  
+  /* Optimize hover effects for touch devices */
+  @media (hover: none) {
+    .card-notion-hover:hover {
+      transform: none;
+    }
+    
+    .card-scale:hover {
+      transform: none;
+    }
   }
 }
 
