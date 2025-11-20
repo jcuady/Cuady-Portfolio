@@ -174,7 +174,7 @@ export const DATA = {
       start: "2024",
       end: "2025",
       description:
-        "Led capstone team building cloud-based car rental platform using FlutterFlow, Firebase, Airtable. Integrated PayMongo API, Google Maps API, TensorFlow + Tesseract OCR for AI fraud detection. Implemented Make.com automations and Power BI analytics dashboards.",
+        "Led capstone team building cloud-based car rental platform using FlutterFlow, Firebase, and Airtable. Integrated PayMongo payment API, Google Maps API (GCP), TensorFlow + Tesseract OCR for AI fraud detection, and VADER sentiment analysis. Hosted APIs on Render and implemented Make.com automations with Airtable for data analytics.",
     },
     {
       company: "Sole Surgeon",
@@ -207,7 +207,7 @@ export const DATA = {
       start: "Sept 2025",
       end: "Dec 2025",
       description:
-        "Supported Global Network Operations through ticketing, fault isolation, and documentation.",
+        "Supported Global Network Operations through ticketing, fault isolation, and documentation. Utilized Salesforce for ticketing management and developed an intern tracking system (https://converge-dtr.vercel.app/login) for time-in/time-out monitoring using React and Supabase.",
     },
     {
       company: "Startek Pasig",
@@ -218,7 +218,7 @@ export const DATA = {
       start: "June 2023",
       end: "Nov 2023",
       description:
-        "Created Power BI dashboards using SQL and statistical analysis (ANOVA).",
+        "Created Power BI dashboards using SQL, Python, and statistical analysis (ANOVA). Performed data analysis and visualization to support business decision-making.",
     },
   ],
   education: [
@@ -358,8 +358,8 @@ export const DATA = {
       dates: "2025",
       active: true,
       description:
-        "Mobile-first application built with FlutterFlow for rapid deployment and cross-platform compatibility. Features modern UI/UX and responsive design.",
-      technologies: ["FlutterFlow", "Dart", "Firebase"],
+        "Cloud-based car rental platform with AI fraud detection using TensorFlow and Tesseract OCR. Integrated Google Maps API, PayMongo payment gateway, and VADER sentiment analysis. Automated workflows with Make.com and Airtable for data analytics.",
+      technologies: ["FlutterFlow", "Firebase", "TensorFlow", "Tesseract OCR", "Google Maps API", "PayMongo", "VADER", "Render", "Make.com", "Airtable"],
       links: [
         {
           type: "Website",
