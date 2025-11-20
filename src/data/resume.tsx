@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Full-Stack Developer & Automation Engineer specializing in building scalable web systems and workflow automation. Founder of Optrizo.",
   summary:
-    "I'm a 4th-year BS Information Technology student at De La Salle University, graduating December 2025. As the founder of Optrizo, I build automation-first solutions for SMEs, including CRMs, queueing systems, and dashboards. I specialize in full-stack development, API integrations, and workflow optimization using modern web technologies. I've reduced manual work by 80% and improved operational efficiency for multiple businesses through smart automation and system design.",
+    "I'm a BS Information Technology graduate from De La Salle University (December 2025). As the founder of Optrizo, I build automation-first solutions for SMEs, including CRMs, queueing systems, and dashboards. I specialize in full-stack development, API integrations, and workflow optimization using modern web technologies. I've reduced manual work by 80% and improved operational efficiency for multiple businesses through smart automation and system design.",
   avatarUrl: "/avatar/me-light.png",
   avatarWidth: 150,
   avatarHeight: 150,
@@ -33,7 +33,6 @@ export const DATA = {
   skills: [
     {
       category: "Languages & Frameworks",
-      logoUrl: "/skills/frontend.png",
       skills: [
         "JavaScript",
         "TypeScript",
@@ -46,7 +45,6 @@ export const DATA = {
     },
     {
       category: "Frontend Development",
-      logoUrl: "/skills/frameworks-libraries.png",
       skills: [
         "React.js",
         "Next.js",
@@ -58,7 +56,6 @@ export const DATA = {
     },
     {
       category: "Backend Development",
-      logoUrl: "/skills/backend.png",
       skills: [
         "Node.js",
         "Express.js",
@@ -70,7 +67,6 @@ export const DATA = {
     },
     {
       category: "Databases & Cloud",
-      logoUrl: "/skills/cloud-deployment.png",
       skills: [
         "Supabase",
         "Firebase",
@@ -82,7 +78,6 @@ export const DATA = {
     },
     {
       category: "Automation & Integrations",
-      logoUrl: "/skills/ai-tools.png",
       skills: [
         "Airtable",
         "Make.com",
@@ -95,7 +90,6 @@ export const DATA = {
     },
     {
       category: "AI/ML & Data",
-      logoUrl: "/skills/development-tools.png",
       skills: [
         "TensorFlow",
         "Tesseract OCR",
@@ -106,7 +100,6 @@ export const DATA = {
     },
     {
       category: "DevOps & Tools",
-      logoUrl: "/skills/design-cms.png",
       skills: [
         "Git/GitHub",
         "Docker",
@@ -167,7 +160,6 @@ export const DATA = {
       badges: ["Founder"],
       location: "Remote",
       title: "Founder / Full-Stack Developer",
-      logoUrl: "/work-experience/optrizo.png",
       start: "2024",
       end: "Present",
       description:
@@ -179,7 +171,6 @@ export const DATA = {
       href: "https://rentthendrivecar.com",
       location: "Remote",
       title: "Project Lead / Full-Stack Developer",
-      logoUrl: "/work-experience/rtd.png",
       start: "2024",
       end: "2025",
       description:
@@ -191,7 +182,6 @@ export const DATA = {
       badges: [],
       location: "Remote",
       title: "CRM & Automation Developer",
-      logoUrl: "/work-experience/solesurgeon.png",
       start: "2025",
       end: "2025",
       description:
@@ -200,10 +190,9 @@ export const DATA = {
     {
       company: "Hakum Auto Care",
       badges: [],
-      href: "https://hakumautocare.com",
+      href: "hakumautocare.com",
       location: "On-site",
       title: "Full-Stack Developer",
-      logoUrl: "/work-experience/hakum.png",
       start: "2024",
       end: "2024",
       description:
@@ -215,7 +204,6 @@ export const DATA = {
       badges: ["Internship"],
       location: "On-site",
       title: "IT Intern",
-      logoUrl: "/work-experience/converge.png",
       start: "Sept 2025",
       end: "Dec 2025",
       description:
@@ -227,7 +215,6 @@ export const DATA = {
       href: "https://startek.com",
       location: "Hybrid",
       title: "Data Analyst Intern",
-      logoUrl: "/work-experience/startek.png",
       start: "June 2023",
       end: "Nov 2023",
       description:
@@ -266,62 +253,54 @@ export const DATA = {
       href: "https://www.airtable.com",
       dates: "2024",
       description: "Issued by Airtable",
-      image: "/certifications/airtable.png",
     },
     {
       title: "AWS Academy Cloud Foundations",
       href: "https://aws.amazon.com/training/awsacademy/",
       dates: "2024",
       description: "Issued by AWS Academy",
-      image: "/certifications/aws.png",
     },
     {
       title: "Klaviyo Developer Certificate",
       href: "https://www.klaviyo.com",
       dates: "2024",
       description: "Issued by Klaviyo",
-      image: "/certifications/klaviyo.png",
     },
     {
       title: "HubSpot SEO & Marketing Hub",
       href: "https://www.hubspot.com",
       dates: "2024",
       description: "Issued by HubSpot Academy",
-      image: "/certifications/hubspot.png",
     },
     {
       title: "Lean Six Sigma White Belt",
       href: "https://www.sixsigma.com",
       dates: "2024",
       description: "Issued by Six Sigma",
-      image: "/certifications/sixsigma.png",
     },
     {
       title: "Databricks Generative AI Essentials",
       href: "https://www.databricks.com",
       dates: "2024",
       description: "Issued by Databricks",
-      image: "/certifications/databricks.png",
     },
     {
       title: "Asana Workflow Specialist",
       href: "https://www.asana.com",
       dates: "2024",
       description: "Issued by Asana",
-      image: "/certifications/asana.png",
     },
     {
       title: "CCNA Enterprise Networking",
       href: "https://www.cisco.com",
       dates: "2024",
       description: "Issued by Cisco",
-      image: "/certifications/cisco.png",
     },
   ],
   projects: [
     {
       title: "Hakum Auto Care - Queueing System",
-      href: "https://hakumautocare.com",
+      href: "hakumautocare.com",
       dates: "2024",
       active: true,
       description:
@@ -330,11 +309,11 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://hakumautocare.com",
+          href: "hakumautocare.com",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/hakum.png",
+      image: "",
       video: "",
     },
     {
@@ -352,7 +331,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/meridian.png",
+      image: "",
       video: "",
     },
     {
@@ -370,12 +349,12 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/investph.png",
+      image: "",
       video: "",
     },
     {
-      title: "RTD 2025 - FlutterFlow App",
-      href: "https://r-t-d-2025-new-rlyzjy.flutterflow.app/",
+      title: "Rent Then Drive App",
+      href: "/projects/RTD WALKTHROUGH.pdf",
       dates: "2025",
       active: true,
       description:
@@ -384,11 +363,11 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://r-t-d-2025-new-rlyzjy.flutterflow.app/",
+          href: "/projects/RTD WALKTHROUGH.pdf",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/rtd.png",
+      image: "",
       video: "",
     },
     {
@@ -406,7 +385,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/projects/solesurgeon.png",
+      image: "",
       video: "",
     },
   ],
@@ -418,7 +397,7 @@ export const DATA = {
         "Real-time queueing management system with SMS notifications. Built with React, TypeScript, Supabase, and Twilio for streamlined customer flow.",
       technologies: ["React", "TypeScript", "Supabase", "Twilio"],
       dates: "2024",
-      image: "/projects/hakum.png",
+      image: "",
     },
     {
       title: "Sole Surgeon - CRM & Automation",
@@ -427,7 +406,7 @@ export const DATA = {
         "Comprehensive Airtable + Pancake CRM system with automated tagging, SMS flows, and customer tracking. Reduced manual work by 80%.",
       technologies: ["Airtable", "Make.com", "Twilio", "Pancake"],
       dates: "2024",
-      image: "/projects/solesurgeon.png",
+      image: "",
     },
     {
       title: "Airtable Automation Workflows",
@@ -436,7 +415,7 @@ export const DATA = {
         "Custom automation workflows connecting Airtable with multiple services. Includes billing automation, inventory management, and customer sync systems.",
       technologies: ["Airtable", "Make.com", "Supabase", "REST APIs"],
       dates: "2023-2024",
-      image: "/projects/airtable-automation.png",
+      image: "",
     },
     {
       title: "Pancake PH Partner Integrations",
@@ -445,7 +424,7 @@ export const DATA = {
         "Built custom integrations for Pancake CRM platform. Developed automated workflows for client onboarding, tagging systems, and customer communication.",
       technologies: ["React", "Pancake API", "Make.com", "Supabase"],
       dates: "2024",
-      image: "/projects/pancake-integration.png",
+      image: "",
     },
     {
       title: "Billing Automation Workflows",
@@ -454,7 +433,7 @@ export const DATA = {
         "Automated billing systems for multiple clients. Integrated payment gateways, invoice generation, and subscription management using modern APIs.",
       technologies: ["Stripe", "PayMongo", "Make.com", "Airtable"],
       dates: "2023-2024",
-      image: "/projects/billing-automation.png",
+      image: "",
     },
   ],
   hackathons: [
@@ -464,7 +443,7 @@ export const DATA = {
       location: "Manila, PH",
       description:
         "Developed an innovative automation solution for business process optimization during the DLSU IT department hackathon. Focused on creating efficient workflows using modern web technologies.",
-      image: "/hackathons/dlsu.png",
+      image: "",
       mlh: "",
       links: [],
     },
