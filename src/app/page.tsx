@@ -412,7 +412,7 @@ export default function Page() {
                 <h2 className="mt-4">Featured Projects</h2>
               </div>
               <div className="grid gap-6 stagger-container">
-                {DATA.projects.slice(0, 4).map((project, index) => (
+                {DATA.projects.map((project, index) => (
                   <div key={index} className="card-notion-hover stagger-item">
                     <div className="space-y-4">
                       <div className="flex items-start justify-between gap-4">
