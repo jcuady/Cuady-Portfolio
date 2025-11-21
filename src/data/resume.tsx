@@ -301,11 +301,11 @@ export const DATA = {
     {
       title: "EMS - Employee Management System",
       href: "https://ems-fullstack-net.vercel.app/",
-      dates: "2024",
+      dates: "2025",
       active: true,
       description:
-        "Full-stack Employee Management System with role-based authentication (Admin, Manager, Employee). Features complete CRUD operations, responsive design, and production-ready deployment with Vercel + Railway integration.",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Railway API", "Vercel"],
+        "Full-stack Employee Management System built with .NET Core backend and Next.js frontend. Features role-based authentication (Admin, Manager, Employee), complete CRUD operations, responsive design, and production-ready deployment with Docker containerization.",
+      technologies: ["Next.js", "TypeScript", ".NET Core", "C#", "Docker", "Railway", "Vercel"],
       links: [
         {
           type: "Website",
