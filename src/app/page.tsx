@@ -423,7 +423,7 @@ export default function Page() {
                         {project.description}
                       </p>
                       <div className="flex flex-wrap gap-2">
-                        {project.technologies.slice(0, 4).map((tech, i) => (
+                        {project.technologies.map((tech, i) => (
                           <span key={i} className="badge-minimal text-xs">{tech}</span>
                         ))}
                       </div>
