@@ -299,6 +299,24 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "EMS - Employee Management System",
+      href: "https://ems-fullstack-net.vercel.app/",
+      dates: "2024",
+      active: true,
+      description:
+        "Full-stack Employee Management System with role-based authentication (Admin, Manager, Employee). Features complete CRUD operations, responsive design, and production-ready deployment with Vercel + Railway integration.",
+      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Railway API", "Vercel"],
+      links: [
+        {
+          type: "Website",
+          href: "https://ems-fullstack-net.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
       title: "Hakum Auto Care - Queueing System",
       href: "hakumautocare.com",
       dates: "2024",
