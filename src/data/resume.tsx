@@ -49,6 +49,8 @@ export const DATA = {
         "React.js",
         "Next.js",
         "Vue.js",
+        "React Native",
+        "Flutter",
         "Tailwind CSS",
         "Bootstrap",
         "FlutterFlow",
@@ -69,6 +71,7 @@ export const DATA = {
       category: "Databases & Cloud",
       skills: [
         "Supabase",
+        "Convex",
         "Firebase",
         "SQL/NoSQL",
         "AWS",
@@ -155,6 +158,17 @@ export const DATA = {
 
   work: [
     {
+      company: "Nexvision Innovation",
+      href: "#",
+      badges: [],
+      location: "Remote",
+      title: "Lead Full Stack Developer",
+      start: "Nov 2025",
+      end: "Present",
+      description:
+        "Lead Full Stack Developer and Project Lead for flagship products BazaarX, Beauty Connect, and NexSkill. Managing development teams and internship programs while overseeing end-to-end architecture for both web and mobile platforms using React.js, TypeScript, APIs, and React Native.",
+    },
+    {
       company: "Optrizo Digital Solutions",
       href: "https://optrizo.com",
       badges: ["Founder"],
@@ -190,7 +204,7 @@ export const DATA = {
     {
       company: "Hakum Auto Care",
       badges: [],
-      href: "hakumautocare.com",
+      href: "https://www.hakumautocare.com/",
       location: "On-site",
       title: "Full-Stack Developer",
       start: "2024",
@@ -299,6 +313,65 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "BeautyConnect MVP",
+      href: "https://beauty-connect-mvp.vercel.app",
+      dates: "2025",
+      active: true,
+      description: "Multi-tenant beauty marketplace for customers, vendors, & affiliates featuring booking, e-commerce, and LMS.",
+      technologies: [
+        "React 19",
+        "TypeScript 5.9",
+        "Vite 7",
+        "Tailwind CSS 4.1",
+        "Shadcn/UI",
+        "Supabase",
+        "Framer Motion",
+        "Vitest"
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://beauty-connect-mvp.vercel.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "https://image.thum.io/get/width/1200/crop/675/noanimate/https://beauty-connect-mvp.vercel.app",
+      video: "",
+    },
+    {
+      title: "BazaarX",
+      href: "#",
+      dates: "2025",
+      active: true,
+      description: "E-commerce platform with integrated inventory management and multi-vendor support.",
+      technologies: ["React.js", "Node.js", "Express", "PostgreSQL"],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Cortex AI",
+      href: "#",
+      dates: "2025",
+      active: true,
+      description: "Advanced AI analytics dashboard monitoring key performance metrics and predictive insights.",
+      technologies: ["Python", "TensorFlow", "FastAPI", "Next.js"],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Nexvision Payroll",
+      href: "#",
+      dates: "2025",
+      active: true,
+      description: "Automated payroll processing system with tax calculation and compliance reporting.",
+      technologies: ["C#", ".NET Core", "SQL Server", "React"],
+      links: [],
+      image: "",
+      video: "",
+    },
+    {
       title: "EMS - Employee Management System",
       href: "https://ems-fullstack-net.vercel.app/",
       dates: "2025",
@@ -313,12 +386,12 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://image.thum.io/get/width/1200/crop/675/noanimate/https://ems-fullstack-net.vercel.app/",
       video: "",
     },
     {
       title: "Hakum Auto Care - Queueing System",
-      href: "hakumautocare.com",
+      href: "https://www.hakumautocare.com/",
       dates: "2024",
       active: true,
       description:
@@ -327,11 +400,11 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "hakumautocare.com",
+          href: "https://www.hakumautocare.com/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://image.thum.io/get/width/1200/crop/675/noanimate/https://www.hakumautocare.com/",
       video: "",
     },
     {
@@ -349,7 +422,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://image.thum.io/get/width/1200/crop/675/noanimate/https://meridian-capital-zeta.vercel.app/",
       video: "",
     },
     {
@@ -367,7 +440,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://image.thum.io/get/width/1200/crop/675/noanimate/https://invest-ph-1.vercel.app/",
       video: "",
     },
     {
@@ -403,7 +476,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://image.thum.io/get/width/1200/crop/675/noanimate/https://solesurgeon.com",
       video: "",
     },
   ],

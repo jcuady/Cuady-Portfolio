@@ -1,16 +1,15 @@
 "use client";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 
 interface ThemeAvatarProps {
   name: string;
-  initials: string;
   className?: string;
 }
 
-export function ThemeAvatar({ name, initials, className }: ThemeAvatarProps) {
+export function ThemeAvatar({ name, className }: ThemeAvatarProps) {
   const { theme, resolvedTheme } = useTheme();
   const [isHovered, setIsHovered] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -39,7 +38,6 @@ export function ThemeAvatar({ name, initials, className }: ThemeAvatarProps) {
       onMouseLeave={() => setIsHovered(false)}
     >
       <AvatarImage alt={name} src={getAvatarSrc()} />
-      <AvatarFallback>{initials}</AvatarFallback>
     </Avatar>
   );
 }

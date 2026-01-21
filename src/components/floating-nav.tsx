@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useCallback } from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
-import { Home, Briefcase, FolderGit2, Zap, User, GraduationCap, Code, Heart, Sun, Moon } from "lucide-react";
+import { Home, Briefcase, FolderGit2, Zap, User, GraduationCap, Code, Sun, Moon, FileText, Mail } from "lucide-react";
 import { useTheme } from "next-themes";
 import { DATA } from "@/data/resume";
 
@@ -22,10 +22,10 @@ const DEFAULT_SECTIONS: NavSection[] = [
   { id: "work", label: "Experience", icon: <Briefcase className="w-full h-full" /> },
   { id: "projects", label: "Projects", icon: <FolderGit2 className="w-full h-full" /> },
   { id: "optrizo-projects", label: "Optrizo", icon: <Zap className="w-full h-full" /> },
-  { id: "resume", label: "About", icon: <User className="w-full h-full" /> },
+  { id: "resume", label: "Resume", icon: <FileText className="w-full h-full" /> },
   { id: "education", label: "Education", icon: <GraduationCap className="w-full h-full" /> },
-  { id: "skills", label: "Technical Skills", icon: <Code className="w-full h-full" /> },
-  { id: "core-skills", label: "Core Skills", icon: <Heart className="w-full h-full" /> },
+  { id: "skills", label: "Skills", icon: <Code className="w-full h-full" /> },
+  { id: "contact", label: "Contact", icon: <Mail className="w-full h-full" /> },
 ];
 
 export function FloatingNav({ sections = DEFAULT_SECTIONS }: FloatingNavProps) {
